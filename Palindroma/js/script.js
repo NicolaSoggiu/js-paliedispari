@@ -8,8 +8,10 @@ function palindrome(addWord) {
 
   let palindromeWord;
   if (addWord === reverseWord) {
+    palindromeWord = true;
     console.log("The word is a palindrome");
   } else {
+    palindromeWord = false;
     console.log("The word is not a palindrome");
   }
 
@@ -17,3 +19,4 @@ function palindrome(addWord) {
 }
 
 let check = palindrome(word);
+console.log(check);
